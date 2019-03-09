@@ -2,12 +2,12 @@
 node {
     def mvnHome
     stage('Preparation') { // for display purposes
-        // Get some code from a GitHub repository
-        checkout scm
-        // Get the Maven tool.
-        // ** NOTE: This 'M3' Maven tool must be configured
-        // **       in the global configuration.
-        mvnHome = tool 'maven'
+    // Get some code from a GitHub repository
+    checkout scm
+    // Get the Maven tool.
+    // ** NOTE: This 'M3' Maven tool must be configured
+    // **       in the global configuration.
+    mvnHome = tool 'maven'
     }
     stage('Compile') {
         bat(/mvn clean compile/)
