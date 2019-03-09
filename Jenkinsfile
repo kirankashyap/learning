@@ -9,9 +9,18 @@ node {
         bat(/mvn clean compile/)
     }
     stage('Test') {
-         bat(/mvn test/)
-         //Collect Unit test reports to show in Jenkins
-         junit '**/target/surefire-reports/TEST-*.xml'
+       try {
+           bat(/mvn test/)
+       } catch (error) {
+           throw error
+       } finally {
+          //Collect Unit test reports to show in Jenkins
+          junit '**/target/surefire-reports/TEST-*.xml'
+       }
+
+
+
+
     }
     stage('Build') {
        bat(/mvn package/)
