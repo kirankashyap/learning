@@ -4,6 +4,6 @@
 <body>
 <h1>Hello World</h1>
 
-The counter output is <%= Counter.countString(7) %>
+The counter output is <%= Counter.countString(6) %>
 </body>
 </html>
