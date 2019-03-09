@@ -21,4 +21,7 @@ node {
     stage('Build') {
        bat(/"${mvnHome}\bin\mvn" package/)
     }
+    stage('Deploy') {
+       bat(/copy target\learning.war C:\Users\Kiran\Documents\workspace\servers\prod\tomcat\webapps\ /)
+    }
 }
