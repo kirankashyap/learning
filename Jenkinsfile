@@ -10,7 +10,7 @@ node {
         mvnHome = tool 'maven'
     }
     stage('Compile') {
-        bat(/"${mvnHome}\bin\mvn" clean compile/)
+        bat(/mvn clean compile/)
         //Collect Unit test reports to show in Jenkins
     }
     stage('Test') {
