@@ -17,10 +17,6 @@ node {
           //Collect Unit test reports to show in Jenkins
           junit '**/target/surefire-reports/TEST-*.xml'
        }
-
-
-
-
     }
     stage('Build') {
        bat(/mvn package/)
