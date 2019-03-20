@@ -22,6 +22,6 @@ node {
        bat(/mvn package/)
     }
     stage('Deploy') {
-       bat(/copy target\learning.war C:\Users\calib\workspace\servers\prod\tomcat\webapps\ /)
+       bat(/copy target\learning.war C:\Users\calib\workspace\servers\prod\webapps\ /)
     }
 }
