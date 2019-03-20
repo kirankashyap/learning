@@ -2,10 +2,11 @@
 
 <%
 String message = request.getParameter("numberToCount");
+int numberToCount = (int)message;
 %>
 
 <html>
 <body>
-The message  is <%= message %>
+The message  is <%= Counter.countString(numberToCount) %>
 </body>
 </html>
