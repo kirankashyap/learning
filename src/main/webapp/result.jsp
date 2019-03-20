@@ -2,7 +2,7 @@
 
 <%
 String message = request.getParameter("numberToCount");
-int numberToCount = (int)message;
+int numberToCount = Integer.parseInt(message);
 %>
 
 <html>
