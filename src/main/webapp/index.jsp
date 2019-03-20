@@ -2,8 +2,10 @@
 
 <html>
 <body>
-<h1>Hello World</h1>
+<form action="/result.jsp">
+Enter Count: <input type="number" id="numberToCount"><br>
+<input type="submit" value="Submit">
+</form>
 
-The counter output is <%= Counter.countString(6) %>
 </body>
 </html>
