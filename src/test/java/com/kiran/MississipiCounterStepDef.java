@@ -8,7 +8,7 @@ import org.junit.Assert;
 
 public class MississipiCounterStepDef {
     String actualResult;
-/*
+
     @Given("^someone wants to count missisipily$")
     public void someone_wants_to_count_missisipily() throws Exception {
         // Write code here that turns the phrase above into concrete actions
@@ -25,5 +25,5 @@ public class MississipiCounterStepDef {
         // Write code here that turns the phrase above into concrete actions
         Assert.assertEquals(expectedString,actualResult);
     }
-*/
+
 }
