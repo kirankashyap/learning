@@ -19,7 +19,18 @@ public class Counter {
                 if (counter == 1) {
                     returnValue = returnValue + counter + " mississipi";
                 } else {
-                    returnValue = returnValue + " " + counter + " mississipi";
+                    String text = " mississipi";
+                    if(counter % 3 == 0){
+                        if(counter % 5 == 0){
+                            text = " fizz buzz";
+                        }
+                        text = " fizz";
+                    } else {
+                        if(counter % 5 == 0){
+                            text = " buzz";
+                        }
+                    }
+                    returnValue = returnValue + " " + counter + text;
                 }
 
             }
