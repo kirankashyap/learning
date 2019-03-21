@@ -19,7 +19,7 @@ public class CounterStepDef {
     @When("^I ask it to count to (\\d+)$")
     public void i_ask_it_to_count_to(int countUpto) throws Exception {
         // Write code here that turns the phrase above into concrete actions
-        actualString = Counter.countString(countUpto);
+        actualString = Counter.countString(countUpto,false);
     }
 
     @Then("^I should be told \"([^\"]*)\"$")

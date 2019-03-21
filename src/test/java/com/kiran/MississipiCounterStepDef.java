@@ -16,7 +16,7 @@ public class MississipiCounterStepDef {
     @When("^I ask to count to (\\d+)$")
     public void i_ask_to_count_to(int givenCount) throws Exception {
         // Write code here that turns the phrase above into concrete actions
-       actualResult=Counter.countString(givenCount);
+       actualResult=Counter.countString(givenCount,true);
     }
 
     @Then("^I should see \"([^\"]*)\"$")
