@@ -1,7 +1,6 @@
-Feature: Is it Friday yet?
-  Everybody wants to know when it's Friday
+Feature: Counter For Tanning Machine
 
-  Scenario: Sunday isn't Friday
-    Given today is Sunday
-    When I ask whether it's Friday yet
-    Then I should be told "Nope"
+  Scenario: Count to five
+    Given the tanning machine is on
+    When I ask it to count to 5
+    Then I should be told "1 2 3 4 5"

@@ -6,9 +6,9 @@ public class Counter {
         String returnValue = "";
         for (int counter = 1; counter <= countUpto; counter++) {
             if (counter == 1) {
-                returnValue = returnValue + counter + " missisippi";
+                returnValue = returnValue + counter ;
             } else {
-                returnValue = returnValue + " " + counter + " missisippi";
+                returnValue = returnValue + " " + counter;
             }
 
         }
