@@ -16,6 +16,7 @@ node {
        } finally {
           //Collect Unit test reports to show in Jenkins
           junit '**/target/surefire-reports/TEST-*.xml'
+           step([$class: 'CucumberReportPublisher', fileExcludePattern: '', fileIncludePattern: 'cucumber.json', ignoreFailedTests: false, jenkinsBasePath: '', jsonReportDirectory: 'target/', missingFails: false, parallelTesting: false, pendingFails: false, skippedFails: false, undefinedFails: false])
        }
     }
     stage('Build') {
