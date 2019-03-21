@@ -4,6 +4,7 @@ import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.junit.Assert;
 
 public class MississipiCounterStepDef {
     String actualResult;
@@ -22,7 +23,7 @@ public class MississipiCounterStepDef {
     @Then("^I should see \"([^\"]*)\"$")
     public void i_should_see(String expectedString) throws Exception {
         // Write code here that turns the phrase above into concrete actions
-
+        Assert.assertEquals(expectedString,actualResult);
     }
 
 }
