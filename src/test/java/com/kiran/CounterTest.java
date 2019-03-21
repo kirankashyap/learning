@@ -15,7 +15,7 @@ public class CounterTest {
 
     @Test
     public void testForFour(){
-        assertEquals("1 missisippi 2 missisippi 3 missisippi 4 missisippi 5 missisippi 6 missisippi", Counter.countString(6));
+        assertEquals("1 2 3 4 5 6", Counter.countString(6));
     }
 
 
