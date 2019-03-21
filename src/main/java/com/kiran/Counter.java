@@ -17,9 +17,9 @@ public class Counter {
         } else {
             for (int counter = 1; counter <= countUpto; counter++) {
                 if (counter == 1) {
-                    returnValue = returnValue + counter + " missisippi";
+                    returnValue = returnValue + counter + " mississipi";
                 } else {
-                    returnValue = returnValue + " " + counter + " missisippi";
+                    returnValue = returnValue + " " + counter + " mississipi";
                 }
 
             }
